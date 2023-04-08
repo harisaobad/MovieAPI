@@ -1,0 +1,21 @@
+<div class="container" style="margin-top: 30px; margin-bottom: 20px">
+  <table class="table">
+    <thead>
+      <th width="14.50px">Ime</th>
+      <th width="14.50px">Prezime</th>
+      <th width="14.50px">Datum</th>
+      <th>Slika</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let actor of actors">
+        <td>{{ actor.Ime }}</td>
+        <td>{{ actor.Prezime }}</td>
+        <td>{{ actor.Datum }}</td>
+
+        <td>
+          <img [src]="actor.Slika" [style.width.px]="actor.ImageWidth" />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
